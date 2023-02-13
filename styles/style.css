@@ -7,7 +7,7 @@ body {
 body {
     color: rgb(65, 65, 65);
     background-color: rgb(255, 255, 255);
-   /* background-image:url(img/abstract.jpg);*/
+    background-image:url(img/abstract.jpg);
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
