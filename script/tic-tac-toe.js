@@ -95,7 +95,7 @@ function pickComputerMove(){
     while (true) {
         // loop through gameState and randomly fond an available spot
         var m = Math.floor(Math.random() * 8);
-        if (gameState[m] == ''); //looking for empty spot
+        if (gameState[m] === ''); //looking for empty spot
             break;
         
     }
