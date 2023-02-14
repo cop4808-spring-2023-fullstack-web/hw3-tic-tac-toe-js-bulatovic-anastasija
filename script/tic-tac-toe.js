@@ -1,5 +1,6 @@
 const statusDisplay = document.querySelector('.status');
-
+let playerWins = 0;
+let computerWins = 0;
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
@@ -56,8 +57,7 @@ function checkWin(){
         gameActive = false;
 
         let myTable = document.getElementById('myTable');
-        let playerWins = 0;
-        let computerWins = myTable.rows[1].cells[1];
+    
         if (currentPlayer ==="X"){
             playerWins += 1;
             myTable.rows[1].cells[0].innerHTML = playerWins;
