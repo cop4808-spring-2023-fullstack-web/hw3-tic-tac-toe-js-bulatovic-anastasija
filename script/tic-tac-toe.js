@@ -1,8 +1,13 @@
 const statusDisplay = document.querySelector('.status');
+
+//initialization of the score counter variables 
 let playerWins = 0;
 let computerWins = 0;
+
 let gameActive = true;
-let currentPlayer = "X";
+//randomly picks between x and o
+let currentPlayer = ['X','O'][Math.round(Math.random())];
+//let currentPlayer = 'X';
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 const winningMessage = () => `Player ${currentPlayer} has won!`;
@@ -31,6 +36,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+    //shows who the current player's turn it is 
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
@@ -57,13 +63,20 @@ function checkWin(){
         gameActive = false;
 
         let myTable = document.getElementById('myTable');
-    
+        //Checks to see if the winner is "x" or the player
         if (currentPlayer ==="X"){
+            //if the winner is the human player it incriments the score
+            //counter "playerWins"
             playerWins += 1;
+            //updates the score bar in the html
             myTable.rows[1].cells[0].innerHTML = playerWins;
         }
+        //Checks to see if the winner is "O" or the computer
         if (currentPlayer ==="O"){
+             //if the winner is the human player it incriments the score
+            //counter "ComputerWins"
             computerWins += 1;
+            //updates the score bar in the html
             myTable.rows[1].cells[1].innerHTML = computerWins;
         }
 
