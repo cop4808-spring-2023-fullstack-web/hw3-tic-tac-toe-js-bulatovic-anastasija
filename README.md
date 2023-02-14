@@ -1,66 +1,24 @@
-<div align="center">
-  
-  <img src="./logo.png" height="150px">
-  <h3>Tic-Tac-Toe</h3>
-    
-</div>
 
-<a href="https://tic-tac-toe-michael.netlify.app/"><h3 align="center">Try me!</h3></a>
+## Tic Tac Toe Game HW3
+* Anastasija Bulatovic 
+* Z#: 23402921
 
+Within homeworm 3 we Wrote a tic tac toe app where you can play against the computer.  We used this project https://github.com/michaelkolesidis/tic-tac-toe as a starting point. We added the play against the computer part and include the requirements below.
 
+* The app Randomly pick who starts
+* The app Has a status bar
+* The app Shows when it’s your move on the status bar 
+* At the end, The app show who won the game
+* The app shows score of you and the computer and update it after each game
+* The app uses Bootstrap, HTML/CSS/JS/(JQuery optional)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b0376d02-8121-4fc9-a93e-d8e6ecb5b9c8/deploy-status)](https://app.netlify.com/sites/tic-tac-toe-michael/deploys)
+* The app uses function and variable names such as ValidMoves, BoardClicked, CheckWin
+* The app uses 1D array that holds the game state 
+* The app uses 2D array that stores a list of winning state conditions
+* The app uses for / while loops
 
+(you cannot see my name on the app gif, becuase it could not fit within the gif by my z# is visible )
+![ezgif-3-1163871197](https://user-images.githubusercontent.com/66039575/218643615-0659b4aa-18be-4401-a506-5363f7423baf.gif)
+(this is the image that includes both my name and z#)
+![image](https://user-images.githubusercontent.com/66039575/218643884-e672d82b-d508-4d04-b509-a7ea639c3f43.png)
 
-
-## Technologies Used
-
-<a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/javascript/javascript-original.svg" height="50px" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://en.wikipedia.org/wiki/CSS"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/css3/css3-plain.svg" height="50px" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/html5/html5-plain.svg" height="50px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-## Description 
-The popular Tic-tac-toe game, implemented with vanilla JavaScript.
-
-
-
-## Screenshot
-<img src="./tic-tac-toe-screenshot.png">
-
-
-
-## Related Projects
-[Minesweeper Emoji](https://github.com/michaelkolesidis/minesweeper-emoji)
-
-
-
-## License
-
-<a href="https://www.gnu.org/licenses/gpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/GPLv3_Logo.svg" height="100px" /></a>
-
-Copyright (c) 2022 Michael Kolesidis<br>
-Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
-
-
-
-<br>
-<br>
-
-
-
-[//]: # (Free Software)
-<div align="center">
-  <br>
-  <br>
-
-  <a href="https://github.com/michaelkolesidis/made-with-linux" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Made_with_Linux.png/240px-Made_with_Linux.png"></a>
-</div>
-<br>                                                      
-<div align="center">
-  <a href="https://endsoftwarepatents.org/innovating-without-patents"><img style="height: 90px;" src="https://static.fsf.org/nosvn/esp/logos/innovating-without-patents.svg"></a>
-</div>
