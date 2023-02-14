@@ -14,6 +14,16 @@
   <body>
     <div id="home"></div>
       <div class="header">Tic-Tac-Toe</div>
+      <table id="myTable">
+        <tr>
+          <th>Player</th>
+          <th>Computer</th>
+        </tr>
+        <tr>
+          <th id="playerWins"></th>
+          <th id="computerWins"></th>
+        </tr>
+      </table>
       <div class="container">
         <div class="cell" id="0" data-cell-index="0"></div>
         <div class="cell" id="1" data-cell-index="1"></div>
@@ -26,6 +36,7 @@
         <div class="cell" id="8" data-cell-index="8"></div>
       </div>
       <p class="status"></p>
+   
       <button class="restart">New Game</button>
 
       <footer>

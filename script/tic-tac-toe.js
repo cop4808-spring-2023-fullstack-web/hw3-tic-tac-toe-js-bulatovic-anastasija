@@ -21,6 +21,7 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
+
 //handels the click
 function handleCellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
@@ -34,6 +35,7 @@ function handlePlayerChange() {
 
 function checkWin(){
 
+    var table = document.getElementById("table")
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
         const winCondition = winningConditions[i];
@@ -43,7 +45,7 @@ function checkWin(){
         if (a === '' || b === '' || c === '') {
             continue;
         }
-        if (a === b && b === c) {
+        if (a === b && b === c){
             roundWon = true;
             break
         }
@@ -52,6 +54,19 @@ function checkWin(){
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
+
+        let myTable = document.getElementById('myTable');
+        let playerWins = 0;
+        let computerWins = myTable.rows[1].cells[1];
+        if (currentPlayer ==="X"){
+            playerWins += 1;
+            myTable.rows[1].cells[0].innerHTML = playerWins;
+        }
+        if (currentPlayer ==="O"){
+            computerWins += 1;
+            myTable.rows[1].cells[1].innerHTML = computerWins;
+        }
+
         statusDisplay.style.color = "rgb(251,100,204)";
         return roundWon;
     }
@@ -83,8 +98,10 @@ function handleResultValidation() {
 }
 
 function handelComputerMove(){
+    if (currentPlayer==="O"){
+        pickComputerMove();
+    }
 
-    pickComputerMove();
     if (!checkWin()){
       handlePlayerChange();
     }
@@ -95,9 +112,11 @@ function pickComputerMove(){
     while (true) {
         // loop through gameState and randomly fond an available spot
         var m = Math.floor(Math.random() * 8);
-        if (gameState[m] === ''); //looking for empty spot
+        if (gameState[m] === '');{
+            //looking for empty spot
             break;
         
+        } 
     }
     //m will have the computer move
     gameState[m]=currentPlayer
