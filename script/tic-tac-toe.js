@@ -6,8 +6,8 @@ let computerWins = 0;
 
 let gameActive = true;
 //randomly picks between x and o
-let currentPlayer = ['X','O'][Math.round(Math.random())];
-//let currentPlayer = 'X';
+//let currentPlayer = ['X','O'][Math.round(Math.random())];
+let currentPlayer = 'X';
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 const winningMessage = () => `Player ${currentPlayer} has won!`;
